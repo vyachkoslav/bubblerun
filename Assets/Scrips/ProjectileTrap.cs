@@ -24,6 +24,7 @@ public class ProjectileTrap : Trap
 
     public override void Trigger()
     {
+        if (projectile != null) Destroy(projectile);
         projectile = Instantiate(_projectilePrefab, _startPos.position, Quaternion.identity);
     }
 
