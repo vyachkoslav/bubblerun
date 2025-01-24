@@ -4,7 +4,7 @@ public class DestroyBubbleOnHit : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag != "Player") return;
+        if (!collision.CompareTag("Player")) return;
 
         collision.GetComponent<BubbleController>().DestroyBubble();
     }
