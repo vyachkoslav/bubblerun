@@ -19,7 +19,7 @@ public class BubbleUI : MonoBehaviour
 
     public void UnHover()
     {
-        Debug.Assert(hovered == 0);
+        Debug.Assert(hovered != 0);
         hovered -= 1;
         if(hovered == 0)
             OnHoverEnd.Invoke();

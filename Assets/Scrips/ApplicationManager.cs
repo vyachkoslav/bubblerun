@@ -2,11 +2,16 @@ using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Object = UnityEngine.Object;
 
 public class ApplicationManager : MonoBehaviour
 {
     public float delay = 0.5f;
-    [SerializeField] private BubbleUIInteraction bubble;
+
+    public void DestroyObject(Object obj)
+    {
+        Destroy(obj);
+    }
     
     public void SetScene(string sceneName)
     {
@@ -15,7 +20,6 @@ public class ApplicationManager : MonoBehaviour
 
     public void DelayedSetScene(string sceneName)
     {
-        Destroy(bubble.gameObject);
         StartCoroutine(RunDelayed(() => SetScene(sceneName)));
     }
 
@@ -26,7 +30,6 @@ public class ApplicationManager : MonoBehaviour
 
     public void DelayedQuit()
     {
-        Destroy(bubble.gameObject);
         StartCoroutine(RunDelayed(Quit));
     }
 
