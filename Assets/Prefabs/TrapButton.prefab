@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 68519515099348014}
   - component: {fileID: 6824208976640432703}
   - component: {fileID: 7977749428324414946}
-  - component: {fileID: 3691846634730014734}
+  - component: {fileID: 7486714629206113138}
   m_Layer: 0
   m_Name: TrapButton
   m_TagString: Untagged
@@ -135,7 +135,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3691846634730014734
+--- !u!114 &7486714629206113138
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -144,6 +144,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 8043308714302942341}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 394f507139c39b14084d5c12ffc43e65, type: 3}
+  m_Script: {fileID: 11500000, guid: d4b7dab725203ab408aaa35aa0315ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnClick:
+    m_PersistentCalls:
+      m_Calls: []
