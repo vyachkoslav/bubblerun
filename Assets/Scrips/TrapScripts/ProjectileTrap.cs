@@ -9,21 +9,24 @@ public class ProjectileTrap : Trap
     [SerializeField] Material _lineMaterial;
 
     private GameObject projectile;
+    private LineRenderer lr;
 
-    private void Start()
+    private void Awake()
     {
-        LineRenderer lr = gameObject.AddComponent<LineRenderer>();
+        lr = gameObject.AddComponent<LineRenderer>();
         lr.SetPosition(0, _startPos.position);
         lr.SetPosition(1, _endPos.position);
         lr.startWidth = 0.1f;
         lr.endWidth = 0.1f;
-        lr.startColor = Color.red;
-        lr.endColor = Color.red;
+        lr.startColor = Color.green;
+        lr.endColor = Color.green;
         lr.material = _lineMaterial;
     }
 
     public override void Trigger()
     {
+        lr.startColor = Color.red;
+        lr.endColor = Color.red;
         if (projectile != null) Destroy(projectile);
         projectile = Instantiate(_projectilePrefab, _startPos.position, Quaternion.identity);
     }
@@ -36,6 +39,8 @@ public class ProjectileTrap : Trap
         if (Vector3.Distance(projectile.transform.position, _endPos.position) < 0.05f)
         {
             Destroy(projectile);
+            lr.startColor = Color.green;
+            lr.endColor = Color.green;
             return;
         }
 
