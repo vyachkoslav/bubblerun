@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
 public class BubbleController : MonoBehaviour
@@ -9,6 +10,8 @@ public class BubbleController : MonoBehaviour
     [SerializeField] private float acceleration = 10;
     private Vector2 controls = Vector2.zero;
 
+    public UnityEvent OnDestroy = new();
+
     private void Update()
     {
         body.linearVelocity += controls * (acceleration * Time.deltaTime);
@@ -17,6 +20,11 @@ public class BubbleController : MonoBehaviour
         {
             body.linearVelocity = body.linearVelocity.normalized * maxSpeed;
         }
+    }
+
+    public void DestroyBubble()
+    {
+        OnDestroy.Invoke();
     }
 
     public void OnMove(InputAction.CallbackContext ctx)
