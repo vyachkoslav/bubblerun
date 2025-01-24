@@ -7,10 +7,16 @@ public class BubbleUIInteraction : MonoBehaviour
     [SerializeField] private Transform bubbleSpawn;
     [SerializeField] private AudioSource bubbleSoundPlayer;
     [SerializeField] private AudioSource bubbleDestroySoundPlayer;
+    private Rigidbody2D bubbleRigidBody;
     
     private BubbleUI hoveredBubbleUI;
     private bool interactionEnabled = true;
-    
+
+    private void Awake()
+    {
+        bubbleRigidBody = GetComponent<Rigidbody2D>();
+    }
+
     public void SetEnabled(bool enabled)
     {
         interactionEnabled = enabled;
@@ -20,10 +26,13 @@ public class BubbleUIInteraction : MonoBehaviour
     {
         if (!interactionEnabled) return;
         bubbleSoundPlayer.Play();
+        bubbleRigidBody.angularVelocity = 0;
+        bubbleRigidBody.linearVelocity = Vector2.zero;
+        
         if(!hoveredBubbleUI)
             transform.position = bubbleSpawn.position;
         else
-            hoveredBubbleUI.OnInteracted.Invoke();
+            hoveredBubbleUI.Interact();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -32,7 +41,7 @@ public class BubbleUIInteraction : MonoBehaviour
         if (other.TryGetComponent(out BubbleUI ui))
         {
             hoveredBubbleUI = ui;
-            ui.OnHover.Invoke();
+            ui.Hover();
         }
     }
 
@@ -41,7 +50,7 @@ public class BubbleUIInteraction : MonoBehaviour
         if (!interactionEnabled) return;
         if (hoveredBubbleUI && other.gameObject == hoveredBubbleUI.gameObject)
         {
-            hoveredBubbleUI.OnHoverEnd.Invoke();
+            hoveredBubbleUI.UnHover();
             hoveredBubbleUI = null;
         }
     }
