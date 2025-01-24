@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 4838521799352269142}
   m_Layer: 0
   m_Name: THEBUBBLE
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -223,7 +223,7 @@ Rigidbody2D:
   m_LinearDamping: 1
   m_AngularDamping: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6ffe15679e0eb95499095fed97e38aa6, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
