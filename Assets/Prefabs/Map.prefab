@@ -3363,6 +3363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4215729390097843691}
   - component: {fileID: 4943600041077455031}
+  - component: {fileID: 3861918589971820718}
   m_Layer: 0
   m_Name: Map
   m_TagString: Untagged
@@ -3398,3 +3399,16 @@ Grid:
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
   m_CellSwizzle: 0
+--- !u!114 &3861918589971820718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4369804818114915053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef1f597ed8fa23468404d1a158029c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _amplitude: 0.1
