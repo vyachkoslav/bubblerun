@@ -1,5 +1,6 @@
 using Unity.Collections;
 using UnityEngine;
+using UnityEngine.Events;
 
 [CreateAssetMenu(fileName = "TrapPlayerState", menuName = "Scriptable Objects/TrapPlayerState")]
 public class TrapPlayerState : ScriptableObject
@@ -9,6 +10,9 @@ public class TrapPlayerState : ScriptableObject
     public float CurrentMana { get; private set; } = 100;
     public float MaxMana => maxMana;
     public Trap HoveredTrap { get; private set; }
+    
+    public UnityEvent OnNotEnoughMana = new();
+    public UnityEvent OnNotReady = new();
 
     private void OnEnable()
     {

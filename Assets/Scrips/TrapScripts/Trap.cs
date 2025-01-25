@@ -15,10 +15,13 @@ public abstract class Trap : MonoBehaviour
     public void Trigger()
     {
         if (IsRunning() || lastActivation + _cooldown > Time.timeAsDouble)
+        {
+            trapPlayerState.OnNotReady.Invoke();
             return;
+        }
         if (!trapPlayerState.TryUseMana(_manaCost))
         {
-            Debug.Log("Not enough mana: " + trapPlayerState.CurrentMana);
+            trapPlayerState.OnNotEnoughMana.Invoke();
             return;
         }
         lastActivation = Time.timeAsDouble;
