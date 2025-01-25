@@ -36,6 +36,7 @@ public class TrapButton : MonoBehaviour
             elapsed += Time.deltaTime;
             yield return null;
         }
+        cooldownImage.fillAmount = 0;
     }
 
     private void Start()
