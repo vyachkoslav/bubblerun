@@ -1213,7 +1213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: m_ActionEvents.Array.size
-      value: 14
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: m_ActionEvents.Array.data[11].m_ActionId
@@ -1289,6 +1289,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6602461965974825997, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: OnDestroy.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7428230555272017967, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: setReadyOnAction
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

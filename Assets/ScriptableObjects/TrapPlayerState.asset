@@ -14,3 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxMana: 100
   initialMana: 100
+  OnNotEnoughMana:
+    m_PersistentCalls:
+      m_Calls: []
+  OnNotReady:
+    m_PersistentCalls:
+      m_Calls: []

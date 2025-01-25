@@ -8,6 +8,12 @@ public class RotateSprite : MonoBehaviour
 
     private new SpriteRenderer renderer;
 
+    public void Init(Sprite upSprite, Sprite upLeftSprite)
+    {
+        _upSprite = upSprite;
+        _upLeftSprite = upLeftSprite;
+    }
+
     private void Awake()
     {
         renderer = GetComponent<SpriteRenderer>();
