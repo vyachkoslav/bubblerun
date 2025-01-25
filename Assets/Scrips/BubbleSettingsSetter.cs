@@ -13,7 +13,7 @@ public class BubbleSettingsSetter : MonoBehaviour
     
     public void OnValidate()
     {
-        rotateSprite.Init(bubblePlayerSettings.PlayerSprite, bubblePlayerSettings.AltSprite);
+        //rotateSprite.Init(bubblePlayerSettings.PlayerSprite, bubblePlayerSettings.AltSprite);
         playerInput.actions = bubblePlayerSettings.InputAsset;
         EditorUtility.SetDirty(rotateSprite);
         EditorUtility.SetDirty(playerInput);

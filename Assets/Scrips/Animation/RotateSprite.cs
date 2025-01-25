@@ -1,41 +1,42 @@
 using UnityEngine;
 
-[RequireComponent(typeof(SpriteRenderer))]
+[RequireComponent(typeof(SpriteRenderer)), RequireComponent(typeof(Animator))]
 public class RotateSprite : MonoBehaviour
 {
-    [SerializeField] Sprite _upSprite;
-    [SerializeField] Sprite _upLeftSprite;
+    private Animator anim;
 
-    private new SpriteRenderer renderer;
-
-    public void Init(Sprite upSprite, Sprite upLeftSprite)
-    {
-        _upSprite = upSprite;
-        _upLeftSprite = upLeftSprite;
-    }
+    //public void Init(Sprite upSprite, Sprite upLeftSprite)
+    //{
+    //    _upSprite = upSprite;
+    //    _upLeftSprite = upLeftSprite;
+    //}
 
     private void Awake()
     {
-        renderer = GetComponent<SpriteRenderer>();
+        //renderer = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     public void UpdateTransformAndSprite(Vector2 dir)
     {
+        anim.SetFloat("Velocity", dir.magnitude);
+
+        bool diag = !(dir.y == 0 || dir.x == 0);
+
+        anim.SetBool("Diag", diag);
+
         if (dir.y > 0.5f)
         {
             if (dir.x < -0.5f)
             {
-                renderer.sprite = _upLeftSprite;
                 transform.rotation = Quaternion.identity;
             }
             else if (dir.x > 0.5f)
             {
-                renderer.sprite = _upLeftSprite;
                 transform.rotation = Quaternion.Euler(0, 0, -90);
             }
             else
             {
-                renderer.sprite = _upSprite;
                 transform.rotation = Quaternion.identity;
             }
         }
@@ -43,17 +44,14 @@ public class RotateSprite : MonoBehaviour
         {
             if (dir.x < -0.5f)
             {
-                renderer.sprite = _upLeftSprite;
                 transform.rotation = Quaternion.Euler(0, 0, 90);
             }
             else if (dir.x > 0.5f)
             {
-                renderer.sprite = _upLeftSprite;
                 transform.rotation = Quaternion.Euler(0, 0, -180);
             }
             else
             {
-                renderer.sprite = _upSprite;
                 transform.rotation = Quaternion.Euler(0, 0, -180);
             }
         }
@@ -61,12 +59,10 @@ public class RotateSprite : MonoBehaviour
         {
             if (dir.x < -0.5f)
             {
-                renderer.sprite = _upSprite;
                 transform.rotation = Quaternion.Euler(0, 0, 90);
             }
             else if (dir.x > 0.5f)
             {
-                renderer.sprite = _upSprite;
                 transform.rotation = Quaternion.Euler(0, 0, -90);
             }
         }
