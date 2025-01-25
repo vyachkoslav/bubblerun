@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using TMPro;
 using System.Collections;
@@ -42,5 +43,10 @@ public class CountDown : MonoBehaviour
 
         CountdownText.text = string.Empty;
         cr = null;
+    }
+
+    private void OnDestroy()
+    {
+        Time.timeScale = 1;
     }
 }

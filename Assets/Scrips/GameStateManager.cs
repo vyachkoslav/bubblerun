@@ -26,4 +26,9 @@ public class GameStateManager : MonoBehaviour
             isEnded = true;
         }
     }
+
+    public void BubblesWin()
+    {
+        OnBubblesWon.Invoke();
+    }
 }

@@ -35,7 +35,7 @@ public class ApplicationManager : MonoBehaviour
 
     private IEnumerator RunDelayed(Action action)
     {
-        yield return new WaitForSeconds(delay);
+        yield return new WaitForSecondsRealtime(delay);
         action();
     }
 }

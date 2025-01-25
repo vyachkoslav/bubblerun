@@ -19,16 +19,19 @@ public class CameraFollowTargets : MonoBehaviour
     {
         if (!useFollow) return;
 
+        int count = 0;
         float targetY = 0;
         float maxY = float.MinValue;
         foreach (var target in _targets)
         {
+            if (!target || !target.gameObject.activeSelf) continue;
+            count++;
             targetY += target.position.y;
             if (target.position.y > maxY)
                 maxY = target.position.y;
         }
 
-        targetY /= _targets.Count;
+        targetY /= count;
 
         var pos = transform.position;
         float paddedY = maxY + paddingToTop - cam.orthographicSize;
