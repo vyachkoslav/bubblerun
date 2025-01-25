@@ -24,9 +24,14 @@ public class ScoreTracker : MonoBehaviour
 
     bool timerPaused = true;
 
+    private Vector2 playerStartPos;
+
     private void Start()
     {
-        results = new RoundResult[2];
+        StartRound();
+
+        results = new RoundResult[] { new(), new() };
+        playerStartPos = _playerObject.transform.position;
     }
 
     private void Update()
@@ -45,8 +50,13 @@ public class ScoreTracker : MonoBehaviour
 
     public void EndRound(bool win)
     {
+
         timerPaused = true;
         results[round].win = win;
+        _playerObject.transform.position = playerStartPos;
+        _playerObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+
+        Debug.Log($"End of round {round + 1}:\nScore: {results[round].score}\nTime: {results[round].timer}\nWin: {results[round].win}");
     }
 
     public int FindWinner()
