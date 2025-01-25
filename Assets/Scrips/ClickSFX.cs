@@ -13,8 +13,9 @@ public class ClickSFX : MonoBehaviour
         DontDestroyOnLoad(gameObject);
     }
 
-    public void PlayClickSFX()
+    private void Update()
     {
-        audioSource.PlayOneShot(clips[Random.Range(0, clips.Count)]);
+        if(Input.GetMouseButtonDown(0))
+            audioSource.PlayOneShot(clips[Random.Range(0, clips.Count)]);
     }
 }
