@@ -274,6 +274,7 @@ GameObject:
   - component: {fileID: 7977749428324414946}
   - component: {fileID: 7486714629206113138}
   - component: {fileID: 3035610937404937046}
+  - component: {fileID: 3272478444534720401}
   m_Layer: 0
   m_Name: TrapButton
   m_TagString: Untagged
@@ -342,8 +343,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: 0b5ee3970070826468c477d65eeb51e9, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 2273428676159147719, guid: 31b129fd7c9c88f40af8ce1cf524054a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -391,7 +392,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 0.75}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -411,6 +412,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4b7dab725203ab408aaa35aa0315ed4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _sprite: {fileID: 2273428676159147719, guid: 31b129fd7c9c88f40af8ce1cf524054a, type: 3}
+  _clickSprite: {fileID: 4647980623007158736, guid: 31b129fd7c9c88f40af8ce1cf524054a, type: 3}
   OnClick:
     m_PersistentCalls:
       m_Calls: []
@@ -437,3 +440,25 @@ MonoBehaviour:
   xMovement: 1
   xSpeed: 1
   ySpeed: 1
+--- !u!95 &3272478444534720401
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8043308714302942341}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 08245ef36c759c546a4d777223cf19d1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
