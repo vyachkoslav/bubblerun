@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ScoreTracker : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class ScoreTracker : MonoBehaviour
     }
 
     [SerializeField] GameObject _playerObject;
+    [SerializeField] UnityEvent OnRoundEnd;
 
     RoundResult[] results;
 
@@ -28,8 +30,6 @@ public class ScoreTracker : MonoBehaviour
 
     private void Start()
     {
-        StartRound();
-
         results = new RoundResult[] { new(), new() };
         playerStartPos = _playerObject.transform.position;
     }
@@ -50,7 +50,7 @@ public class ScoreTracker : MonoBehaviour
 
     public void EndRound(bool win)
     {
-
+        OnRoundEnd.Invoke();
         timerPaused = true;
         results[round].win = win;
         _playerObject.transform.position = playerStartPos;

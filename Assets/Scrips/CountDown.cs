@@ -5,6 +5,7 @@ using UnityEngine.Events;
 
 public class CountDown : MonoBehaviour
 {
+    [SerializeField] int _countdownDuration;
     [SerializeField] TextMeshProUGUI CountdownText;
 
     [SerializeField] UnityEvent OnCountDownEnd;
@@ -25,19 +26,19 @@ public class CountDown : MonoBehaviour
 
     IEnumerator Countdown()
     {
-        int count = 3;
+        int count = _countdownDuration;
         while (count > 0)
         {
             CountdownText.text = count.ToString();
             count--;
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSecondsRealtime(1);
         }
 
         Time.timeScale = 1;
         CountdownText.text = "GO!";
         OnCountDownEnd.Invoke();
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSecondsRealtime(1);
 
         CountdownText.text = string.Empty;
         cr = null;
