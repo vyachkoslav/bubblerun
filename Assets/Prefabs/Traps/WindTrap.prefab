@@ -46,8 +46,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca2e57892de918499c648376be16235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cooldown: 0
-  _manaCost: 0
+  trapPlayerState: {fileID: 11400000, guid: ae9a9cda7d45b984e80f9593125d4101, type: 2}
+  _cooldown: 3
+  _manaCost: 20
   _windDirection: {x: 1, y: 0}
   _windStrength: 10
   _windDuration: 2
@@ -168,7 +169,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7486714629206113138, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: WindTrap, Assembly-CSharp
+      value: Trap, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 7486714629206113138, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName

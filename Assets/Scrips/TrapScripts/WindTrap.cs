@@ -36,9 +36,9 @@ public class WindTrap : Trap
         lr.material = _lineMaterial;
     }
 
-    public override void Trigger()
+    protected override bool IsRunning() => coroutine != null;
+    protected override void ActivateTrap()
     {
-        if(coroutine != null) StopCoroutine(coroutine);
         coroutine = StartCoroutine(ApplyWind());
     }
 

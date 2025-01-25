@@ -23,11 +23,11 @@ public class ProjectileTrap : Trap
         lr.material = _lineMaterial;
     }
 
-    public override void Trigger()
+    protected override bool IsRunning() => projectile != null;
+    protected override void ActivateTrap()
     {
         lr.startColor = Color.red;
         lr.endColor = Color.red;
-        if (projectile != null) Destroy(projectile);
         projectile = Instantiate(_projectilePrefab, _startPos.position, Quaternion.identity);
     }
 

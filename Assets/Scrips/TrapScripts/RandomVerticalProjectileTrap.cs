@@ -12,7 +12,6 @@ public class RandomVerticalProjectileTrap : Trap
     [SerializeField] private RectTransform range;
     [SerializeField] private float projectileWidth = 0.5f;
     [SerializeField] private int projectileCount = 10;
-    [SerializeField] private float projectileSpeed = 100;
     [SerializeField] private float timeToMoveProjectiles = 3;
     private List<LineRenderer> warnLineRenderers = new();
     private List<GameObject> projectiles = new();
@@ -54,10 +53,10 @@ public class RandomVerticalProjectileTrap : Trap
         }
     }
 
-    public override void Trigger()
+    protected override bool IsRunning() => currentTrapRoutine != null;
+    protected override void ActivateTrap()
     {
-        if (currentTrapRoutine == null)
-            currentTrapRoutine = StartCoroutine(TrapRoutine());
+        currentTrapRoutine = StartCoroutine(TrapRoutine());
     }
 
     private IEnumerator TrapRoutine()
