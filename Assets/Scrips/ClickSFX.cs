@@ -5,17 +5,15 @@ using Random = UnityEngine.Random;
 
 public class ClickSFX : MonoBehaviour
 {
-    [SerializeField] private List<AudioClip> clips;
-    private AudioSource audioSource;
+    [SerializeField] private RandomSFX randomSFX;
     private void Awake()
     {
-        audioSource = GetComponent<AudioSource>();
         DontDestroyOnLoad(gameObject);
     }
 
     private void Update()
     {
         if(Input.GetMouseButtonDown(0))
-            audioSource.PlayOneShot(clips[Random.Range(0, clips.Count)]);
+            randomSFX.PlayRandomSFX();
     }
 }
