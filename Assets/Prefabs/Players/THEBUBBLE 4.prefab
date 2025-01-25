@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 62899f850307741f2a39c98a8b639597, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
+  m_Actions: {fileID: -944628639613478452, guid: c315702070d7740459cba977cf8b6a34, type: 3}
   m_NotificationBehavior: 2
   m_UIInputModule: {fileID: 0}
   m_DeviceLostEvent:
@@ -310,7 +310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f14ca18d31a549a4d925a81e05c92b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubblePlayerSettings: {fileID: 11400000, guid: e20ceea5bd5922f419a9146cbda701cc, type: 2}
+  bubblePlayerSettings: {fileID: 11400000, guid: 0ec47b07b700b324683ea52bb913ab64, type: 2}
   rotateSprite: {fileID: 7614795844317684386}
   playerInput: {fileID: 1739002324633093732}
   bubblePlayer: {fileID: 3552297394928173324}

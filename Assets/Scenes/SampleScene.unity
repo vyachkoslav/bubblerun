@@ -319,10 +319,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1739002324633093732, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
-      propertyPath: m_Actions
-      value: 
-      objectReference: {fileID: -944628639613478452, guid: 016a24610134b7848b9ebf21a47b0b06, type: 3}
     - target: {fileID: 3552297394928173324, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_Name
       value: THEBUBBLE 3
@@ -1730,10 +1726,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1739002324633093732, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
-      propertyPath: m_Actions
-      value: 
-      objectReference: {fileID: -944628639613478452, guid: c315702070d7740459cba977cf8b6a34, type: 3}
     - target: {fileID: 3552297394928173324, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_Name
       value: THEBUBBLE 4
@@ -1853,34 +1845,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_ActionId
-      value: adf091da-8eba-4b2d-b6da-13bcb1ebc2d4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[12].m_ActionId
-      value: d21b38ea-4e97-42b7-9882-d1c31ed26a46
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_ActionId
-      value: c55cbbd5-0471-4ed4-9556-b8680cc1bf32
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_ActionName
-      value: 'BubbleIJKL/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[12].m_ActionName
-      value: 'BubbleArrows/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_ActionName
-      value: 'BubbleNumpad/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-      objectReference: {fileID: 0}
     - target: {fileID: 3552297394928173324, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: m_Name
       value: THEBUBBLE
@@ -2373,10 +2337,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1739002324633093732, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
-      propertyPath: m_Actions
-      value: 
-      objectReference: {fileID: -944628639613478452, guid: fff1b3c628a2875419dd197f35b44463, type: 3}
     - target: {fileID: 3552297394928173324, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_Name
       value: THEBUBBLE 2

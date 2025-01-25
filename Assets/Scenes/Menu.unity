@@ -478,7 +478,7 @@ Transform:
   m_GameObject: {fileID: 312121928}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -76, y: -0, z: -100}
+  m_LocalPosition: {x: -76, y: -108, z: -100}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -1618,10 +1618,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 636001851}
     m_Modifications:
-    - target: {fileID: 1739002324633093732, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
-      propertyPath: m_Actions
-      value: 
-      objectReference: {fileID: -944628639613478452, guid: c315702070d7740459cba977cf8b6a34, type: 3}
     - target: {fileID: 3552297394928173324, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_Name
       value: THEBUBBLE 4
@@ -1666,10 +1662,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7428230555272017967, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
+      propertyPath: setReadyOnAction
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3552297394928173324, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1198787958}
   m_SourcePrefab: {fileID: 100100000, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
 --- !u!4 &1198787948 stripped
 Transform:
@@ -1681,6 +1684,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3552297394928173324, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
   m_PrefabInstance: {fileID: 1198787947}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1198787958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1198787949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe389590caccf44e9a02b8d03e0fb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubbleSpawn: {fileID: 636001851}
+  bubbleSoundPlayer: {fileID: 1858839040}
+  bubbleDestroySoundPlayer: {fileID: 1723553774}
 --- !u!1 &1229409152
 GameObject:
   m_ObjectHideFlags: 0
@@ -1741,7 +1759,7 @@ Transform:
   m_GameObject: {fileID: 1298736122}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -61, y: -106, z: -100}
+  m_LocalPosition: {x: -214.5, y: -109, z: -100}
   m_LocalScale: {x: 50, y: 50, z: 50}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -2024,29 +2042,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1298736123}
     m_Modifications:
-    - target: {fileID: 365984271600597070, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_FlipX
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365984271600597070, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_DrawMode
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3552297394928173324, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: m_Name
       value: THEBUBBLE
       objectReference: {fileID: 0}
-    - target: {fileID: 4838521799352269142, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_Radius
-      value: 0.95
-      objectReference: {fileID: 0}
     - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.07
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.06
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2390,10 +2396,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 312121929}
     m_Modifications:
-    - target: {fileID: 1739002324633093732, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
-      propertyPath: m_Actions
-      value: 
-      objectReference: {fileID: -944628639613478452, guid: fff1b3c628a2875419dd197f35b44463, type: 3}
     - target: {fileID: 3552297394928173324, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_Name
       value: THEBUBBLE 2
@@ -2404,7 +2406,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6422308957587909816, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6422308957587909816, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2438,10 +2440,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7428230555272017967, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
+      propertyPath: setReadyOnAction
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3552297394928173324, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1842516686}
   m_SourcePrefab: {fileID: 100100000, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
 --- !u!4 &1842516676 stripped
 Transform:
@@ -2453,6 +2462,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3552297394928173324, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
   m_PrefabInstance: {fileID: 1842516675}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1842516686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1842516677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe389590caccf44e9a02b8d03e0fb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubbleSpawn: {fileID: 312121929}
+  bubbleSoundPlayer: {fileID: 1858839040}
+  bubbleDestroySoundPlayer: {fileID: 1723553774}
 --- !u!1001 &1857803722
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2461,10 +2485,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 746046042}
     m_Modifications:
-    - target: {fileID: 1739002324633093732, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
-      propertyPath: m_Actions
-      value: 
-      objectReference: {fileID: -944628639613478452, guid: 016a24610134b7848b9ebf21a47b0b06, type: 3}
     - target: {fileID: 3552297394928173324, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_Name
       value: THEBUBBLE 3
@@ -2509,10 +2529,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7428230555272017967, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
+      propertyPath: setReadyOnAction
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3552297394928173324, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1857803733}
   m_SourcePrefab: {fileID: 100100000, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
 --- !u!4 &1857803723 stripped
 Transform:
@@ -2524,6 +2551,21 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 3552297394928173324, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
   m_PrefabInstance: {fileID: 1857803722}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1857803733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857803724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fe389590caccf44e9a02b8d03e0fb0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubbleSpawn: {fileID: 746046042}
+  bubbleSoundPlayer: {fileID: 1858839040}
+  bubbleDestroySoundPlayer: {fileID: 1723553774}
 --- !u!1 &1858839039
 GameObject:
   m_ObjectHideFlags: 0
