@@ -8,7 +8,7 @@ public class ApplicationManager : MonoBehaviour
 {
     public float delay = 0.5f;
 
-    public void DestroyObject(Object obj)
+    public new void DestroyObject(Object obj)
     {
         Destroy(obj);
     }
