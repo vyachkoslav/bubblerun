@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -17,6 +18,8 @@ public class ScoreTracker : MonoBehaviour
         }
     }
 
+    [SerializeField] ApplicationManager _manager;
+    [SerializeField] CameraFollowTargets _cameraScript;
     [SerializeField] GameObject _playerObject;
     [SerializeField] UnityEvent OnRoundEnd;
 
@@ -27,6 +30,8 @@ public class ScoreTracker : MonoBehaviour
     bool timerPaused = true;
 
     private Vector2 playerStartPos;
+
+    private Coroutine cr;
 
     private void Start()
     {
@@ -50,16 +55,22 @@ public class ScoreTracker : MonoBehaviour
 
     public void EndRound(bool win)
     {
-        OnRoundEnd.Invoke();
+        if (cr != null) return;
+
         timerPaused = true;
         results[round].win = win;
-        _playerObject.transform.position = playerStartPos;
-        _playerObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-
+        _cameraScript.useFollow = false;
+        cr = StartCoroutine(DelayedReset());
         Debug.Log($"End of round {round + 1}:\nScore: {results[round].score}\nTime: {results[round].timer}\nWin: {results[round].win}");
     }
 
-    public int FindWinner()
+    private void EndGame()
+    {
+        Debug.Log($"Winner: Player {FindWinner() + 1}");
+        _manager.DelayedSetScene("Menu");
+    }
+
+    private int FindWinner()
     {
         if(results[0].win ^ results[1].win)
         {
@@ -75,5 +86,23 @@ public class ScoreTracker : MonoBehaviour
 
         if (results[0].score > results[1].score) return 0;
         else return 1;
+    }
+
+    private IEnumerator DelayedReset()
+    {
+        yield return new WaitForSeconds(2);
+        if (round == 1)
+        {
+            EndGame();
+        }
+        else
+        {
+            _cameraScript.useFollow = true;
+            _playerObject.transform.position = playerStartPos;
+            _playerObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            OnRoundEnd.Invoke(); 
+        }
+
+        cr = null;
     }
 }

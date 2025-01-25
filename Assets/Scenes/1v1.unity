@@ -610,6 +610,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a90a7b9824e800e44adfc44a5d7b3dd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  useFollow: 1
   _targets:
   - {fileID: 730602201}
   paddingToTop: 0
@@ -1103,6 +1104,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dca356fb8b8832a4095c3f23f87622fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _manager: {fileID: 797799219}
+  _cameraScript: {fileID: 519420033}
   _playerObject: {fileID: 1914099388}
   OnRoundEnd:
     m_PersistentCalls:

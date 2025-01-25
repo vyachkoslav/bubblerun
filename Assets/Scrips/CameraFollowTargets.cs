@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CameraFollowTargets : MonoBehaviour
 {
+    public bool useFollow = true;
+
     [SerializeField] List<Transform> _targets = new();
     [SerializeField] float paddingToTop;
     private Camera cam;
@@ -15,6 +17,8 @@ public class CameraFollowTargets : MonoBehaviour
 
     private void Update()
     {
+        if (!useFollow) return;
+
         float targetY = 0;
         float maxY = float.MinValue;
         foreach (var target in _targets)
