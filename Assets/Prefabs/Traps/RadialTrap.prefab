@@ -61,7 +61,7 @@ MonoBehaviour:
   projectileWidth: 0.5
   projectileCount: 10
   timeToMoveProjectiles: 3
-  warnDelay: 0.5
+  warnDelay: 0.75
   projectileDistance: 20
 --- !u!1 &4427081981913146698
 GameObject:

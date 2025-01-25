@@ -90,7 +90,7 @@ MonoBehaviour:
   _projectilePrefab: {fileID: 3467389797793137973, guid: 12eddfdb7c9b95a4aa2b9cb52b0b84ee, type: 3}
   _startPos: {fileID: 7552164852533063908}
   _endPos: {fileID: 3473024656907306036}
-  _timeToMove: 1
+  _timeToMove: 0.3
   _lineMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &4428607663853483659
 GameObject:
@@ -133,7 +133,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 68519515099348014, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.86000013
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 68519515099348014, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: m_LocalPosition.y

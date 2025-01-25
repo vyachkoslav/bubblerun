@@ -43,6 +43,16 @@ public class TrapPlayerState : ScriptableObject
         return true;
     }
 
+    public void SetMana(float mana)
+    {
+        CurrentMana = mana;
+    }
+
+    public void ResetMana()
+    {
+        CurrentMana = maxMana;
+    }
+
     public void AddMana(float mana)
     {
         CurrentMana = Mathf.Clamp(CurrentMana + mana, 0, maxMana);

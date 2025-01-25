@@ -9,7 +9,8 @@ public class CountDown : MonoBehaviour
     [SerializeField] int _countdownDuration;
     [SerializeField] TextMeshProUGUI CountdownText;
 
-    [SerializeField] UnityEvent OnCountDownEnd;
+    public UnityEvent OnCountDownStart;
+    public UnityEvent OnCountDownEnd;
 
     Coroutine cr;
 
@@ -21,12 +22,13 @@ public class CountDown : MonoBehaviour
     public void StartCountdown()
     {
         if (cr != null) StopCoroutine(cr);
-        Time.timeScale = 0;
         cr = StartCoroutine(Countdown());
     }
 
     IEnumerator Countdown()
     {
+        OnCountDownStart.Invoke();
+        Time.timeScale = 0;
         int count = _countdownDuration;
         while (count > 0)
         {
