@@ -29,7 +29,13 @@ public class TrapButton : MonoBehaviour
 
     private IEnumerator CooldownIndication()
     {
+        cooldownImage.fillAmount = 1;
         float elapsed = 0;
+        while (trap.IsRunning())
+        {
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
         while (elapsed < trap.Cooldown)
         {
             cooldownImage.fillAmount = 1 - elapsed / trap.Cooldown;

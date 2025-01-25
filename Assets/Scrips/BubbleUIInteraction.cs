@@ -25,6 +25,11 @@ public class BubbleUIInteraction : MonoBehaviour
     private void OnMouseEnter()
     {
         if (!interactionEnabled) return;
+        Pop();
+    }
+
+    public void Pop()
+    {
         bubbleSoundPlayer.Play();
         bubbleRigidBody.angularVelocity = 0;
         bubbleRigidBody.linearVelocity = Vector2.zero;

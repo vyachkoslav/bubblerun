@@ -60,5 +60,5 @@ public class RandomGasTrap : Trap
         Finished();
     }
 
-    protected override bool IsRunning() => trapRoutine != null;
+    public override bool IsRunning() => trapRoutine != null;
 }

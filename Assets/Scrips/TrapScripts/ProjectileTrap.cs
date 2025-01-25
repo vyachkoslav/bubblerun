@@ -28,7 +28,7 @@ public class ProjectileTrap : Trap
         projectile.SetActive(false);
     }
 
-    protected override bool IsRunning() => projectileRoutine != null;
+    public override bool IsRunning() => projectileRoutine != null;
     protected override void ActivateTrap()
     {
         projectileRoutine = StartCoroutine(SendProjectile());

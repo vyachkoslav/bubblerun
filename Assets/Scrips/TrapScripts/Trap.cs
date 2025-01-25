@@ -13,7 +13,7 @@ public abstract class Trap : MonoBehaviour
     public float Cooldown => _cooldown;
     private double lastActivation = double.MinValue;
     protected abstract void ActivateTrap();
-    protected abstract bool IsRunning();
+    public abstract bool IsRunning();
 
     public void Trigger()
     {

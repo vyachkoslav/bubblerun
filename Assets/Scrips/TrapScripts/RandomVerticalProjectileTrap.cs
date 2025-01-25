@@ -54,7 +54,7 @@ public class RandomVerticalProjectileTrap : Trap
         }
     }
 
-    protected override bool IsRunning() => currentTrapRoutine != null;
+    public override bool IsRunning() => currentTrapRoutine != null;
     protected override void ActivateTrap()
     {
         currentTrapRoutine = StartCoroutine(TrapRoutine());
