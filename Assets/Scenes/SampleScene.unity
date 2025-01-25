@@ -1438,6 +1438,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: WindTrap
       objectReference: {fileID: 0}
+    - target: {fileID: 4659366917371248573, guid: 7497499fd92b97445bcfb36be1cc33f2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7672624912325726405, guid: 7497499fd92b97445bcfb36be1cc33f2, type: 3}
+      propertyPath: ySpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7672624912325726405, guid: 7497499fd92b97445bcfb36be1cc33f2, type: 3}
+      propertyPath: xMovement
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2046,6 +2058,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: VerticalTrap
       objectReference: {fileID: 0}
+    - target: {fileID: 5849540530080493554, guid: c7faaf4157ea45a4dbe16bc1f79f722e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.96
+      objectReference: {fileID: 0}
     - target: {fileID: 6960830391445367171, guid: c7faaf4157ea45a4dbe16bc1f79f722e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.56
@@ -2086,6 +2102,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8934710841380487306, guid: c7faaf4157ea45a4dbe16bc1f79f722e, type: 3}
+      propertyPath: xSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8934710841380487306, guid: c7faaf4157ea45a4dbe16bc1f79f722e, type: 3}
+      propertyPath: yMovement
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2102,6 +2126,10 @@ PrefabInstance:
     - target: {fileID: 3396261670206162947, guid: 0b85a3714232f2e46bb5c9dd2b253f48, type: 3}
       propertyPath: m_Name
       value: ProjectileTrap
+      objectReference: {fileID: 0}
+    - target: {fileID: 4273930189201529836, guid: 0b85a3714232f2e46bb5c9dd2b253f48, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4357257851469557929, guid: 0b85a3714232f2e46bb5c9dd2b253f48, type: 3}
       propertyPath: m_LocalPosition.x
