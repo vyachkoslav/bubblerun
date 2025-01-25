@@ -156,9 +156,9 @@ Transform:
   m_GameObject: {fileID: 5503279723104087380}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: 0, y: 0, z: -0.01}
+  m_LocalScale: {x: 0.52, y: 0.52, z: 0.52}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 4659366917371248573}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -286,10 +286,6 @@ PrefabInstance:
       propertyPath: xMovement
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 6824208976640432703, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 845baced91c622c42ab34fac86b60907, type: 3}
     - target: {fileID: 7486714629206113138, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -384,22 +380,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7977749428324414946, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
-      value: 1.28
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7977749428324414946, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
-      value: 1.28
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8043308714302942341, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: m_Name
       value: TrapButton
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 6824208976640432703, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 68519515099348014, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 5844753442270740581}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}

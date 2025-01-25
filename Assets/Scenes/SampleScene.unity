@@ -852,7 +852,6 @@ MonoBehaviour:
   - {fileID: 43428038}
   - {fileID: 589549027}
   - {fileID: 1594252188}
-  _top: {fileID: 739967681}
   paddingToTop: 3.75
 --- !u!114 &519420034
 MonoBehaviour:
@@ -2648,10 +2647,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: VerticalTrap
       objectReference: {fileID: 0}
-    - target: {fileID: 5849540530080493554, guid: c7faaf4157ea45a4dbe16bc1f79f722e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.96
-      objectReference: {fileID: 0}
     - target: {fileID: 6960830391445367171, guid: c7faaf4157ea45a4dbe16bc1f79f722e, type: 3}
       propertyPath: m_LocalPosition.x
       value: -7.56
@@ -2691,14 +2686,6 @@ PrefabInstance:
     - target: {fileID: 6960830391445367171, guid: c7faaf4157ea45a4dbe16bc1f79f722e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8934710841380487306, guid: c7faaf4157ea45a4dbe16bc1f79f722e, type: 3}
-      propertyPath: xSpeed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8934710841380487306, guid: c7faaf4157ea45a4dbe16bc1f79f722e, type: 3}
-      propertyPath: yMovement
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

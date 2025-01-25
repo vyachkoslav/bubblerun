@@ -81,6 +81,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 337c2783eb406c349b53dce1bae2aabc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnStart:
+    m_PersistentCalls:
+      m_Calls: []
+  OnEnd:
+    m_PersistentCalls:
+      m_Calls: []
   trapPlayerState: {fileID: 11400000, guid: ae9a9cda7d45b984e80f9593125d4101, type: 2}
   _cooldown: 3
   _manaCost: 50
@@ -88,7 +94,7 @@ MonoBehaviour:
   lineMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   range: {fileID: 8680754988525549479}
   projectileWidth: 0.5
-  projectileCount: 15
+  projectileCount: 5
   timeToMoveProjectiles: 3
 --- !u!1001 &5899381520151286748
 PrefabInstance:
@@ -100,7 +106,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 68519515099348014, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.86000013
+      value: -0.96
       objectReference: {fileID: 0}
     - target: {fileID: 68519515099348014, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -137,6 +143,14 @@ PrefabInstance:
     - target: {fileID: 68519515099348014, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035610937404937046, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      propertyPath: xSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035610937404937046, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      propertyPath: yMovement
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7486714629206113138, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
