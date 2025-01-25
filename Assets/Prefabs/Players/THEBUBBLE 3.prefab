@@ -354,6 +354,7 @@ MonoBehaviour:
   audioSource: {fileID: -6874009381063176331}
   playerCollided: {fileID: 8300000, guid: 549b4db4e649d1146979e66da7219fb1, type: 3}
   wallCollided: {fileID: 8300000, guid: dd025c4cb00657248b74a65f6039f578, type: 3}
+  delayBetweenSounds: 0.1
 --- !u!82 &-6874009381063176331
 AudioSource:
   m_ObjectHideFlags: 0
