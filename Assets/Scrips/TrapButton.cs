@@ -1,8 +1,11 @@
 using System;
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TrapButton : MonoBehaviour
 {
+    [SerializeField] private Image cooldownImage;
     [SerializeField] private float yMovement;
     [SerializeField] private float xMovement;
     private float currentY;
@@ -11,6 +14,29 @@ public class TrapButton : MonoBehaviour
     [SerializeField] private float ySpeed;
     private Vector2 movementDir = Vector2.one;
     private Vector3 initPos;
+    private Trap trap;
+    
+    private void Awake()
+    {
+        trap = GetComponentInParent<Trap>();
+        trap.OnStart.AddListener(StartCooldownIndication);
+    }
+
+    private void StartCooldownIndication()
+    {
+        StartCoroutine(CooldownIndication());
+    }
+
+    private IEnumerator CooldownIndication()
+    {
+        float elapsed = 0;
+        while (elapsed < trap.Cooldown)
+        {
+            cooldownImage.fillAmount = 1 - elapsed / trap.Cooldown;
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+    }
 
     private void Start()
     {

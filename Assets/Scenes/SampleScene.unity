@@ -1070,7 +1070,7 @@ MonoBehaviour:
           m_StringArgument: Menu
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1379772219}
+      - m_Target: {fileID: 1424188130}
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: PlayOneShot
         m_Mode: 2
@@ -1726,18 +1726,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: WindTrap
       objectReference: {fileID: 0}
-    - target: {fileID: 4659366917371248573, guid: 7497499fd92b97445bcfb36be1cc33f2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.12
-      objectReference: {fileID: 0}
-    - target: {fileID: 7672624912325726405, guid: 7497499fd92b97445bcfb36be1cc33f2, type: 3}
-      propertyPath: ySpeed
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7672624912325726405, guid: 7497499fd92b97445bcfb36be1cc33f2, type: 3}
-      propertyPath: xMovement
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1840,7 +1828,7 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
---- !u!1 &1379772218
+--- !u!1 &1424188129
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1848,8 +1836,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1379772220}
-  - component: {fileID: 1379772219}
+  - component: {fileID: 1424188131}
+  - component: {fileID: 1424188130}
   m_Layer: 0
   m_Name: GameFinishedSound
   m_TagString: Untagged
@@ -1857,13 +1845,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!82 &1379772219
+--- !u!82 &1424188130
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1379772218}
+  m_GameObject: {fileID: 1424188129}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -1954,13 +1942,13 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!4 &1379772220
+--- !u!4 &1424188131
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1379772218}
+  m_GameObject: {fileID: 1424188129}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.7566357, y: 3.1659143, z: -0.1584973}
@@ -2772,4 +2760,4 @@ SceneRoots:
   - {fileID: 443893106}
   - {fileID: 1646317101}
   - {fileID: 797799218}
-  - {fileID: 1379772220}
+  - {fileID: 1424188131}
