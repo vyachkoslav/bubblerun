@@ -57,6 +57,7 @@ public class BubbleUIInteraction : MonoBehaviour
 
     private void OnDestroy()
     {
-        bubbleDestroySoundPlayer.Play();
+        if(bubbleDestroySoundPlayer)
+            bubbleDestroySoundPlayer.Play();
     }
 }
