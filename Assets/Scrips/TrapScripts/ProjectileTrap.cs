@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class ProjectileTrap : Trap
@@ -5,9 +6,10 @@ public class ProjectileTrap : Trap
     [SerializeField] GameObject _projectilePrefab;
     [SerializeField] Transform _startPos;
     [SerializeField] Transform _endPos;
-    [SerializeField] float _projectileSpeed;
+    [SerializeField] float _timeToMove;
     [SerializeField] Material _lineMaterial;
 
+    private Coroutine projectileRoutine;
     private GameObject projectile;
     private LineRenderer lr;
 
@@ -21,33 +23,33 @@ public class ProjectileTrap : Trap
         lr.startColor = Color.green;
         lr.endColor = Color.green;
         lr.material = _lineMaterial;
+        
+        projectile = Instantiate(_projectilePrefab, _startPos.position, Quaternion.identity);
+        projectile.SetActive(false);
     }
 
-    protected override bool IsRunning() => projectile != null;
+    protected override bool IsRunning() => projectileRoutine != null;
     protected override void ActivateTrap()
     {
-        lr.startColor = Color.red;
-        lr.endColor = Color.red;
-        projectile = Instantiate(_projectilePrefab, _startPos.position, Quaternion.identity);
+        projectileRoutine = StartCoroutine(SendProjectile());
     }
 
-    // Update is called once per frame
-    void Update()
+    private IEnumerator SendProjectile()
     {
-        if (projectile == null) return;
-
-        if (Vector3.Distance(projectile.transform.position, _endPos.position) < 0.05f)
+        projectile.SetActive(true);
+        lr.startColor = Color.red;
+        lr.endColor = Color.red;
+        float elapsedTime = 0;
+        while (elapsedTime < _timeToMove)
         {
-            Destroy(projectile);
-            lr.startColor = Color.green;
-            lr.endColor = Color.green;
-            Finished();
-            return;
+            projectile.transform.position = Vector3.Lerp(_startPos.position, _endPos.position, elapsedTime / _timeToMove);
+            elapsedTime += Time.deltaTime;
+            yield return null;
         }
-
-        Vector3 newPos = projectile.transform.position;
-        newPos += (_endPos.position - _startPos.position) * Time.deltaTime * (_projectileSpeed/100);
-
-        projectile.transform.position = newPos;
+        lr.startColor = Color.green;
+        lr.endColor = Color.green;
+        projectile.SetActive(false);
+        projectileRoutine = null;
+        Finished();
     }
 }
