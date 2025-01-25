@@ -1,22 +1,34 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class CameraFollowTargets : MonoBehaviour
 {
     [SerializeField] List<Transform> _targets = new();
+    [SerializeField] float paddingToTop;
+    private Camera cam;
+
+    private void Awake()
+    {
+        cam = GetComponent<Camera>();
+    }
 
     private void Update()
     {
-        float targetY = new();
+        float targetY = 0;
+        float maxY = float.MinValue;
+        foreach (var target in _targets)
+        {
+            targetY += target.position.y;
+            if (target.position.y > maxY)
+                maxY = target.position.y;
+        }
 
-        _targets.ForEach(t =>  targetY += t.position.y);
+        targetY /= _targets.Count;
 
-         targetY *= 1f / _targets.Count;
-
-         var pos = transform.position;
-         pos.y = targetY;
-         transform.position = pos;
-
-        _targets.ForEach(t => Debug.DrawLine(t.position, transform.position, Color.red));
+        var pos = transform.position;
+        float paddedY = maxY + paddingToTop - cam.orthographicSize;
+        pos.y = targetY > paddedY ? targetY : paddedY;
+        transform.position = pos;
     }
 }
