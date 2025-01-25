@@ -71,5 +71,6 @@ public class WindTrap : Trap
         lr.endColor = Color.green;
 
         coroutine = null;
+        Finished();
     }
 }

@@ -96,5 +96,6 @@ public class RandomVerticalProjectileTrap : Trap
 
         projectiles.ForEach(x => x.SetActive(false));
         currentTrapRoutine = null;
+        Finished();
     }
 }

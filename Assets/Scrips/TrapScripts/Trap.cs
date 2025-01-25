@@ -1,8 +1,11 @@
 using System;
 using UnityEngine;
+using UnityEngine.Events;
 
 public abstract class Trap : MonoBehaviour
 {
+    public UnityEvent OnStart = new();
+    public UnityEvent OnEnd = new();
     [SerializeField] private TrapPlayerState trapPlayerState;
     [SerializeField] private float _cooldown;
     [SerializeField] private float _manaCost;
@@ -26,5 +29,11 @@ public abstract class Trap : MonoBehaviour
         }
         lastActivation = Time.timeAsDouble;
         ActivateTrap();
+        OnStart.Invoke();
+    }
+
+    protected void Finished()
+    {
+        OnEnd.Invoke();
     }
 }

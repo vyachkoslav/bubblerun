@@ -41,6 +41,7 @@ public class ProjectileTrap : Trap
             Destroy(projectile);
             lr.startColor = Color.green;
             lr.endColor = Color.green;
+            Finished();
             return;
         }
 

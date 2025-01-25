@@ -46,6 +46,36 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ca2e57892de918499c648376be16235, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  OnStart:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3023821250585750290}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  OnEnd:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3023821250585750290}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   trapPlayerState: {fileID: 11400000, guid: ae9a9cda7d45b984e80f9593125d4101, type: 2}
   _cooldown: 3
   _manaCost: 20
@@ -147,6 +177,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6824208976640432703, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 845baced91c622c42ab34fac86b60907, type: 3}
     - target: {fileID: 7486714629206113138, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
@@ -239,6 +273,14 @@ PrefabInstance:
       propertyPath: OnHoverEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: Trap, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 7977749428324414946, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.28
+      objectReference: {fileID: 0}
+    - target: {fileID: 7977749428324414946, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.28
+      objectReference: {fileID: 0}
     - target: {fileID: 8043308714302942341, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: m_Name
       value: TrapButton
@@ -246,8 +288,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8043308714302942341, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3023821250585750290}
   m_SourcePrefab: {fileID: 100100000, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+--- !u!1 &3442325774116826902 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8043308714302942341, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+  m_PrefabInstance: {fileID: 4637031568180970387}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3023821250585750290
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3442325774116826902}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5b52a2d61acba44bfca34995874c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1000
 --- !u!4 &4659366917371248573 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 68519515099348014, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
