@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 7428230555272017967}
   - component: {fileID: 1947266425063026726}
   m_Layer: 0
-  m_Name: THEBUBBLE 1
+  m_Name: THEBUBBLE 3
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2737061934156448179, guid: 4fda54214fefff642b5603dbcb43e201, type: 3}
+  m_Sprite: {fileID: -2344307172116919866, guid: aa4ffd5de64ba894c8b0b16e497e9bca, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -325,7 +325,7 @@ Animator:
   m_GameObject: {fileID: 3552297394928173324}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 3a6e9f0b8c1798d4ea3252fc7c5be686, type: 2}
+  m_Controller: {fileID: 9100000, guid: 3b01ea104342fd44d80e54ad56127392, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
