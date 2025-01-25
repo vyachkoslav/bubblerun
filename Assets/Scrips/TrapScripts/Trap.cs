@@ -6,6 +6,8 @@ public abstract class Trap : MonoBehaviour
     [SerializeField] private TrapPlayerState trapPlayerState;
     [SerializeField] private float _cooldown;
     [SerializeField] private float _manaCost;
+    public float ManaCost => _manaCost;
+    public float Cooldown => _cooldown;
     private double lastActivation = double.MinValue;
     protected abstract void ActivateTrap();
     protected abstract bool IsRunning();
