@@ -121,7 +121,7 @@ NavMeshSettings:
   m_NavMeshData: {fileID: 0}
 --- !u!4 &43428038 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6422308957587909816, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
   m_PrefabInstance: {fileID: 1680166727}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &82063750
@@ -319,99 +319,59 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 365984271600597070, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_Color.b
-      value: 0.1254902
-      objectReference: {fileID: 0}
-    - target: {fileID: 365984271600597070, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_Color.r
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 1739002324633093732, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_Actions
       value: 
       objectReference: {fileID: -944628639613478452, guid: 016a24610134b7848b9ebf21a47b0b06, type: 3}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_ActionId
-      value: adf091da-8eba-4b2d-b6da-13bcb1ebc2d4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[12].m_ActionId
-      value: d21b38ea-4e97-42b7-9882-d1c31ed26a46
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_ActionId
-      value: c55cbbd5-0471-4ed4-9556-b8680cc1bf32
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_ActionName
-      value: 'BubbleIJKL/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[12].m_ActionName
-      value: 'BubbleArrows/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_ActionName
-      value: 'BubbleNumpad/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3552297394928173324, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 3552297394928173324, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_Name
-      value: THEBUBBLE (2)
+      value: THEBUBBLE 3
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.53
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_LocalPosition.y
       value: -2.46
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7428230555272017967, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: bubblePlayerSettings
-      value: 
-      objectReference: {fileID: 11400000, guid: fac2c5ab3b01e0646a0162adf6db89f2, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
 --- !u!1001 &395630895
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -887,7 +847,7 @@ MonoBehaviour:
   attachedToTop: {fileID: 739967681}
 --- !u!4 &589549027 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6422308957587909816, guid: 2f6773c8353102742bf86bf4e5c631b6, type: 3}
   m_PrefabInstance: {fileID: 288613753}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &619394800
@@ -1770,99 +1730,59 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 365984271600597070, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365984271600597070, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_Color.r
-      value: 0.40392157
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 1739002324633093732, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_Actions
       value: 
       objectReference: {fileID: -944628639613478452, guid: c315702070d7740459cba977cf8b6a34, type: 3}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_ActionId
-      value: adf091da-8eba-4b2d-b6da-13bcb1ebc2d4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[12].m_ActionId
-      value: d21b38ea-4e97-42b7-9882-d1c31ed26a46
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_ActionId
-      value: c55cbbd5-0471-4ed4-9556-b8680cc1bf32
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_ActionName
-      value: 'BubbleIJKL/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[12].m_ActionName
-      value: 'BubbleArrows/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_ActionName
-      value: 'BubbleNumpad/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3552297394928173324, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 3552297394928173324, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_Name
-      value: THEBUBBLE (3)
+      value: THEBUBBLE 4
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.61
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_LocalPosition.y
       value: -2.49
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7428230555272017967, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: bubblePlayerSettings
-      value: 
-      objectReference: {fileID: 11400000, guid: 0ec47b07b700b324683ea52bb913ab64, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
 --- !u!1001 &1230589260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1933,18 +1853,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 365984271600597070, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365984271600597070, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_Color.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365984271600597070, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9254902
-      objectReference: {fileID: 0}
     - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: m_ActionEvents.Array.size
       value: 11
@@ -2223,7 +2131,7 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: 12eddfdb7c9b95a4aa2b9cb52b0b84ee, type: 3}
 --- !u!4 &1594252188 stripped
 Transform:
-  m_CorrespondingSourceObject: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+  m_CorrespondingSourceObject: {fileID: 6422308957587909816, guid: ec45a06ffcedac649a61ddce9f7c9ea2, type: 3}
   m_PrefabInstance: {fileID: 1171109033}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1638431877
@@ -2465,99 +2373,59 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 365984271600597070, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 365984271600597070, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_Color.r
-      value: 0.8117647
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 1739002324633093732, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_Actions
       value: 
       objectReference: {fileID: -944628639613478452, guid: fff1b3c628a2875419dd197f35b44463, type: 3}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.size
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_ActionId
-      value: adf091da-8eba-4b2d-b6da-13bcb1ebc2d4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[12].m_ActionId
-      value: d21b38ea-4e97-42b7-9882-d1c31ed26a46
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_ActionId
-      value: c55cbbd5-0471-4ed4-9556-b8680cc1bf32
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[11].m_ActionName
-      value: 'BubbleIJKL/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[12].m_ActionName
-      value: 'BubbleArrows/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 1739002324633093732, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: m_ActionEvents.Array.data[13].m_ActionName
-      value: 'BubbleNumpad/Move[/XInputControllerWindows/leftStick,/XInputControllerWindows1/leftStick,/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 3552297394928173324, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 3552297394928173324, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_Name
-      value: THEBUBBLE (1)
+      value: THEBUBBLE 2
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.61
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.68
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_LocalPosition.z
       value: -1
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+    - target: {fileID: 6422308957587909816, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7428230555272017967, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
-      propertyPath: bubblePlayerSettings
-      value: 
-      objectReference: {fileID: 11400000, guid: 09645b2bcf3c71a409c4b08fb1bfca57, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+  m_SourcePrefab: {fileID: 100100000, guid: f76d174bcf9f9614c866ca3150d7d175, type: 3}
 --- !u!4 &1859941704 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2730101150468654316, guid: 12eddfdb7c9b95a4aa2b9cb52b0b84ee, type: 3}
