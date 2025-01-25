@@ -1638,6 +1638,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: THEBUBBLE (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4838521799352269142, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_Radius
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2078,6 +2094,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: THEBUBBLE
       objectReference: {fileID: 0}
+    - target: {fileID: 4838521799352269142, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_Radius
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2444,6 +2476,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: THEBUBBLE (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4838521799352269142, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_Radius
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -2544,6 +2592,22 @@ PrefabInstance:
     - target: {fileID: 3552297394928173324, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: m_Name
       value: THEBUBBLE (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4838521799352269142, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_Radius
+      value: 0.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6422308957587909816, guid: 74899132f3d15844596e4dfeb45b05fc, type: 3}
       propertyPath: m_LocalPosition.x
