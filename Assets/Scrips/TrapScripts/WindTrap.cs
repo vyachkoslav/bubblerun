@@ -55,7 +55,6 @@ public class WindTrap : Trap
         while (t < _windDuration)
         {
             coll.Overlap(overlaps);
-            Debug.Log(overlaps.Count);
             foreach (var item in overlaps)
             {
                 if (!item.CompareTag("Player")) continue;

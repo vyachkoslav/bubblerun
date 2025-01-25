@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1739002324633093732}
   - component: {fileID: 5866702004317170887}
   - component: {fileID: 4838521799352269142}
+  - component: {fileID: 7614795844317684386}
   m_Layer: 0
   m_Name: THEBUBBLE
   m_TagString: Player
@@ -80,8 +81,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2506687976236954703, guid: 40c34748a90de9f43acaeaf7863ce681, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -2423882343771826356, guid: b8d58211e5e02244a84a176a5344b7ec, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -105,7 +106,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   body: {fileID: 5866702004317170887}
   maxSpeed: 100
-  acceleration: 10
+  acceleration: 7.5
   OnDestroy:
     m_PersistentCalls:
       m_Calls:
@@ -233,7 +234,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &4838521799352269142
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -269,4 +270,18 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.19
+  m_Radius: 0.66
+--- !u!114 &7614795844317684386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3552297394928173324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07dad1c83145fc54ba99b19ec02d6864, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _upSprite: {fileID: -2423882343771826356, guid: b8d58211e5e02244a84a176a5344b7ec, type: 3}
+  _upLeftSprite: {fileID: 941894133540846567, guid: f07727b34844b734584bdb3602e0cdf0, type: 3}
