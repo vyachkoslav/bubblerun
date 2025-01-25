@@ -7,15 +7,15 @@ public class CameraFollowTargets : MonoBehaviour
 
     private void Update()
     {
-        Vector3 camtarget = new();
+        float targetY = new();
 
-        _targets.ForEach(t => camtarget += t.position);
+        _targets.ForEach(t =>  targetY += t.position.y);
 
-        camtarget *= 1f / _targets.Count;
+         targetY *= 1f / _targets.Count;
 
-        camtarget.z = transform.position.z;
-
-        transform.position = camtarget;
+         var pos = transform.position;
+         pos.y = targetY;
+         transform.position = pos;
 
         _targets.ForEach(t => Debug.DrawLine(t.position, transform.position, Color.red));
     }
