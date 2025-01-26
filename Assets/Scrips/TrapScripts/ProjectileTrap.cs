@@ -7,6 +7,7 @@ public class ProjectileTrap : Trap
     [SerializeField] Transform _startPos;
     [SerializeField] Transform _endPos;
     [SerializeField] float _timeToMove;
+    [SerializeField] float _shotDelay;
 
     private Coroutine projectileRoutine;
     private GameObject projectile;
@@ -25,7 +26,8 @@ public class ProjectileTrap : Trap
 
     private IEnumerator SendProjectile()
     {
-        projectile.SetActive(true);
+        yield return new WaitForSeconds(_shotDelay);
+        projectile.SetActive(true);        
         float elapsedTime = 0;
         while (elapsedTime < _timeToMove)
         {
