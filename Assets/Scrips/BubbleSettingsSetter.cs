@@ -2,6 +2,7 @@ using System;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class BubbleSettingsSetter : MonoBehaviour
 {
@@ -22,6 +23,10 @@ public class BubbleSettingsSetter : MonoBehaviour
 
     private void Awake()
     {
+        if (SceneManager.GetActiveScene().buildIndex == 0)
+        {
+            bubblePlayerSettings.IsReady = false;
+        }
         if (setReadyOnAction) return;
         bubblePlayer.SetActive(bubblePlayerSettings.IsReady);
     }
