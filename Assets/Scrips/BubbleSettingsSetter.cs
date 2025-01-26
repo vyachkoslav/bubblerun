@@ -10,13 +10,14 @@ public class BubbleSettingsSetter : MonoBehaviour
     [SerializeField] private PlayerInput playerInput;
     [SerializeField] private GameObject bubblePlayer;
     [SerializeField] private bool setReadyOnAction;
-    
+
     public void OnValidate()
     {
-        //rotateSprite.Init(bubblePlayerSettings.PlayerSprite, bubblePlayerSettings.AltSprite);
-        playerInput.actions = bubblePlayerSettings.InputAsset;
-        EditorUtility.SetDirty(rotateSprite);
-        EditorUtility.SetDirty(playerInput);
+        if (playerInput.actions != bubblePlayerSettings.InputAsset)
+        {
+            playerInput.actions = bubblePlayerSettings.InputAsset;
+            EditorUtility.SetDirty(playerInput);
+        }
     }
 
     private void Awake()
@@ -28,7 +29,7 @@ public class BubbleSettingsSetter : MonoBehaviour
 
     public void SetReady()
     {
-        if(setReadyOnAction)
+        if (setReadyOnAction)
             bubblePlayerSettings.IsReady = true;
     }
 }
