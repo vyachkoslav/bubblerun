@@ -11,6 +11,12 @@ public class ProjectileTrap : Trap
     private Coroutine projectileRoutine;
     private GameObject projectile;
 
+    private void Awake()
+    {
+        projectile = Instantiate(_projectilePrefab, _startPos.position, Quaternion.identity);
+        projectile.SetActive(false);
+    }
+
     public override bool IsRunning() => projectileRoutine != null;
     protected override void ActivateTrap()
     {
