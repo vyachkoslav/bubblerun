@@ -307,6 +307,18 @@ PrefabInstance:
       propertyPath: yMovement
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6824208976640432703, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1842207051364551963, guid: 31b129fd7c9c88f40af8ce1cf524054a, type: 3}
+    - target: {fileID: 7486714629206113138, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      propertyPath: _sprite
+      value: 
+      objectReference: {fileID: 1842207051364551963, guid: 31b129fd7c9c88f40af8ce1cf524054a, type: 3}
+    - target: {fileID: 7486714629206113138, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      propertyPath: _clickSprite
+      value: 
+      objectReference: {fileID: -2895649710257451141, guid: 31b129fd7c9c88f40af8ce1cf524054a, type: 3}
     - target: {fileID: 7486714629206113138, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
