@@ -13,7 +13,7 @@ public class ProjectileTrap : Trap
 
     private void Awake()
     {
-        projectile = Instantiate(_projectilePrefab, _startPos.position, Quaternion.identity);
+        projectile = Instantiate(_projectilePrefab, _startPos.position, _projectilePrefab.transform.rotation);
         projectile.SetActive(false);
     }
 
