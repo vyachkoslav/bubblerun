@@ -91,7 +91,6 @@ MonoBehaviour:
   _startPos: {fileID: 7552164852533063908}
   _endPos: {fileID: 3473024656907306036}
   _timeToMove: 0.7
-  _lineMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &4428607663853483659
 GameObject:
   m_ObjectHideFlags: 0
@@ -169,6 +168,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 68519515099348014, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035610937404937046, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      propertyPath: xSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035610937404937046, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      propertyPath: ySpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035610937404937046, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      propertyPath: xMovement
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3035610937404937046, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      propertyPath: yMovement
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7486714629206113138, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
