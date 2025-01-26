@@ -90,7 +90,7 @@ MonoBehaviour:
   _projectilePrefab: {fileID: 4156853768342585379, guid: 8162045313cf9ee4bac51d8fd91b5009, type: 3}
   _startPos: {fileID: 7552164852533063908}
   _endPos: {fileID: 3473024656907306036}
-  _timeToMove: 0.7
+  _timeToMove: 1.2
 --- !u!1 &3988226320321373936
 GameObject:
   m_ObjectHideFlags: 0

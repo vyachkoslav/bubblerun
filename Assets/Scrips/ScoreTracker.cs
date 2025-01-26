@@ -39,6 +39,12 @@ public class ScoreTracker : MonoBehaviour
 
     private void Start()
     {
+        ResetRounds();
+    }
+
+    private void ResetRounds()
+    {
+        round = -1;
         results = new RoundResult[] { new(), new() };
     }
 
@@ -64,8 +70,8 @@ public class ScoreTracker : MonoBehaviour
         timerPaused = true;
         results[round].win = win;
         _cameraScript.useFollow = false;
-        cr = StartCoroutine(DelayedReset());
         Debug.Log($"End of round {round + 1}:\nScore: {results[round].score}\nTime: {results[round].timer}\nWin: {results[round].win}");
+        cr = StartCoroutine(DelayedReset());
     }
 
     private void EndGame()
@@ -82,7 +88,9 @@ public class ScoreTracker : MonoBehaviour
             p2WinText.gameObject.SetActive(true);
         }
 
-        _manager.DelayedSetScene("Menu");
+        // _manager.DelayedSetScene("1v1");
+        ResetRounds();
+        cr = StartCoroutine(DelayedReset());
     }
 
     private int FindWinner()
@@ -112,6 +120,8 @@ public class ScoreTracker : MonoBehaviour
         else
         {
             yield return new WaitForSeconds(2);
+            p1WinText.gameObject.SetActive(false);
+            p2WinText.gameObject.SetActive(false);
 
             _cameraScript.useFollow = true;
             

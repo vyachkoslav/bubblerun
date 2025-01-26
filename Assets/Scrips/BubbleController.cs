@@ -21,7 +21,8 @@ public class BubbleController : MonoBehaviour
 
     private void Update()
     {
-        body.linearVelocity += controls * (acceleration * Time.deltaTime);
+        var multiplier = Vector2.Dot(controls, body.linearVelocity) < 0 ? 3 : 1;
+        body.linearVelocity += controls * (acceleration * multiplier * Time.deltaTime);
         var magnitude = body.linearVelocity.magnitude;
         if (magnitude > maxSpeed)
         {
