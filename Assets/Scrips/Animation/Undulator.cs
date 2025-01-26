@@ -1,8 +1,10 @@
 using UnityEngine;
 
-public class MapUndulator : MonoBehaviour
+public class Undulator : MonoBehaviour
 {
     [SerializeField] float _amplitude = 1;
+    [SerializeField] float _frequency = 1;
+    [SerializeField] float _offset = 0;
 
     private float originalY;
     private float index = 0;
@@ -17,7 +19,7 @@ public class MapUndulator : MonoBehaviour
     {
         index += Time.deltaTime;
 
-        float y = _amplitude * Mathf.Sin(index);
+        float y = _amplitude * Mathf.Sin((index + _offset) * _frequency);
 
         y = Mathf.Round(y * 16.0f) * (1.0f/16.0f);
 
