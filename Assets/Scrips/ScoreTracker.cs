@@ -23,8 +23,10 @@ public class ScoreTracker : MonoBehaviour
     [SerializeField] TextMeshProUGUI p1WinText;
     [SerializeField] TextMeshProUGUI p2WinText;
     [SerializeField] ApplicationManager _manager;
+    [SerializeField] GameStateManager _gameStateManager;
     [SerializeField] CameraFollowTargets _cameraScript;
     [SerializeField] GameObject _playerObject;
+    [SerializeField] UnityEvent OnRoundStart;
     [SerializeField] UnityEvent OnRoundEnd;
 
     RoundResult[] results;
@@ -33,14 +35,11 @@ public class ScoreTracker : MonoBehaviour
 
     bool timerPaused = true;
 
-    private Vector2 playerStartPos;
-
     private Coroutine cr;
 
     private void Start()
     {
         results = new RoundResult[] { new(), new() };
-        playerStartPos = _playerObject.transform.position;
     }
 
     private void Update()
@@ -60,8 +59,7 @@ public class ScoreTracker : MonoBehaviour
     public void EndRound(bool win)
     {
         if (cr != null) return;
-
-        _playerObject.GetComponent<PlayerInput>().enabled = false;
+        _gameStateManager.DisableInput();
 
         timerPaused = true;
         results[round].win = win;
@@ -115,11 +113,8 @@ public class ScoreTracker : MonoBehaviour
         {
             yield return new WaitForSeconds(2);
 
-            _playerObject.GetComponent<PlayerInput>().enabled = true;
-
             _cameraScript.useFollow = true;
-            _playerObject.transform.position = playerStartPos;
-            _playerObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            
             OnRoundEnd.Invoke(); 
         }
 

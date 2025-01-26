@@ -24,7 +24,6 @@ public class BubbleSettingsSetter : MonoBehaviour
     {
         if (setReadyOnAction) return;
         bubblePlayer.SetActive(bubblePlayerSettings.IsReady);
-        bubblePlayerSettings.IsReady = false;
     }
 
     public void SetReady()
