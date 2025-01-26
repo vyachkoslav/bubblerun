@@ -30,13 +30,15 @@ public class CountDown : MonoBehaviour
         OnCountDownStart.Invoke();
         Time.timeScale = 0;
         int count = _countdownDuration;
+        CountdownText.text = count.ToString();
+        yield return new WaitForSecondsRealtime(0.35f);
         while (count > 0)
         {
             CountdownText.text = count.ToString();
             count--;
             yield return new WaitForSecondsRealtime(1);
         }
-
+        yield return new WaitForSecondsRealtime(0.45f);
         Time.timeScale = 1;
         CountdownText.text = "GO!";
         OnCountDownEnd.Invoke();
