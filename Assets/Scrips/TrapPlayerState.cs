@@ -10,7 +10,8 @@ public class TrapPlayerState : ScriptableObject
     public float CurrentMana { get; private set; } = 100;
     public float MaxMana => maxMana;
     public Trap HoveredTrap { get; private set; }
-    
+
+    public UnityEvent Clicked = new();
     public UnityEvent OnNotEnoughMana = new();
     public UnityEvent OnNotReady = new();
 

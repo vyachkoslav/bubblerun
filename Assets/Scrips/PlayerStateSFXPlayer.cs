@@ -5,11 +5,13 @@ public class PlayerStateSFXPlayer : MonoBehaviour
 {
     private AudioSource audioSource;
     [SerializeField] private TrapPlayerState trapPlayerState;
+    [SerializeField] private RandomSFX clickSound;
     [SerializeField] private AudioClip noManaClip;
     [SerializeField] private AudioClip notReadyClip;
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
+        trapPlayerState.Clicked.AddListener(clickSound.PlayRandomSFX);
         trapPlayerState.OnNotEnoughMana.AddListener(PlayNoManaClip);
         trapPlayerState.OnNotReady.AddListener(PlayNotReadyClip);
     }
