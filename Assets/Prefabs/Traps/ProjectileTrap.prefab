@@ -87,7 +87,7 @@ MonoBehaviour:
   trapPlayerState: {fileID: 11400000, guid: ae9a9cda7d45b984e80f9593125d4101, type: 2}
   _cooldown: 1
   _manaCost: 15
-  _projectilePrefab: {fileID: 3467389797793137973, guid: 12eddfdb7c9b95a4aa2b9cb52b0b84ee, type: 3}
+  _projectilePrefab: {fileID: 4081771956902068482, guid: a118b9e3a6c0ef74ab70d66cb19e177a, type: 3}
   _startPos: {fileID: 7552164852533063908}
   _endPos: {fileID: 3473024656907306036}
   _timeToMove: 0.3

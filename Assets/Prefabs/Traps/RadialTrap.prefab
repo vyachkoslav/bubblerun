@@ -55,11 +55,11 @@ MonoBehaviour:
   trapPlayerState: {fileID: 11400000, guid: ae9a9cda7d45b984e80f9593125d4101, type: 2}
   _cooldown: 3
   _manaCost: 50
-  projectilePrefab: {fileID: 3467389797793137973, guid: 2d96fd820649a9646a0db09136a05cae, type: 3}
+  projectilePrefab: {fileID: 4081771956902068482, guid: a118b9e3a6c0ef74ab70d66cb19e177a, type: 3}
   lineMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
   range: {fileID: 7969851488302539440}
-  projectileWidth: 0.5
-  projectileCount: 10
+  projectileWidth: 1.875
+  projectileCount: 6
   timeToMoveProjectiles: 3
   warnDelay: 0.75
   projectileDistance: 20
