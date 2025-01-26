@@ -104,7 +104,6 @@ MonoBehaviour:
   _startPos: {fileID: 7552164852533063908}
   _endPos: {fileID: 3473024656907306036}
   _timeToMove: 0.9
-  _lineMaterial: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
 --- !u!1 &4428607663853483659
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +437,10 @@ PrefabInstance:
     - target: {fileID: 7486714629206113138, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: OnHoverEnd.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: Trap, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7977749428324414946, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8043308714302942341, guid: ec92b92c9da91194da30391ab2a7129d, type: 3}
       propertyPath: m_Name
