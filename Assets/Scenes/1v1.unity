@@ -130,18 +130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &222965172 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8756366240859820744, guid: b4fa4f39ab84ec746975cafa9cc5d121, type: 3}
-  m_PrefabInstance: {fileID: 4383876067431123116}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &443893103
+--- !u!1 &139283092
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -149,9 +138,10 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 443893106}
-  - component: {fileID: 443893105}
-  - component: {fileID: 443893104}
+  - component: {fileID: 139283096}
+  - component: {fileID: 139283095}
+  - component: {fileID: 139283094}
+  - component: {fileID: 139283093}
   m_Layer: 0
   m_Name: TrapButtonSFX
   m_TagString: Untagged
@@ -159,34 +149,53 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &443893104
+--- !u!114 &139283093
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443893103}
+  m_GameObject: {fileID: 139283092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5591d13b4c9e02d49bafd6860f0b6405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clips:
+  - {fileID: 8300000, guid: 3e414f2e915495149ab853c2992c4ffc, type: 3}
+  - {fileID: 8300000, guid: 60fb5f2821ebd9c4a8d07c8842ce230b, type: 3}
+  - {fileID: 8300000, guid: a0ae46e39eaadd94283d453b8de0061f, type: 3}
+  - {fileID: 8300000, guid: 859e7466b3496614ea98d3acf654fcbc, type: 3}
+  - {fileID: 8300000, guid: 71eb98fbadaef8749af31e825d113b37, type: 3}
+--- !u!114 &139283094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 139283092}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99fb6bbcc7f9ad9428834fc871ecdddb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   trapPlayerState: {fileID: 11400000, guid: ae9a9cda7d45b984e80f9593125d4101, type: 2}
+  clickSound: {fileID: 139283093}
   noManaClip: {fileID: 8300000, guid: 2357c9e3204513241965c5e28cb45e52, type: 3}
   notReadyClip: {fileID: 8300000, guid: e7e9e479ec0fd3540b3c81a79e5e5dff, type: 3}
---- !u!82 &443893105
+--- !u!82 &139283095
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443893103}
+  m_GameObject: {fileID: 139283092}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -271,13 +280,13 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!4 &443893106
+--- !u!4 &139283096
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443893103}
+  m_GameObject: {fileID: 139283092}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 13.74356, y: 0.48095083, z: 2.3480048}
@@ -286,6 +295,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &222965172 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8756366240859820744, guid: b4fa4f39ab84ec746975cafa9cc5d121, type: 3}
+  m_PrefabInstance: {fileID: 4383876067431123116}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1867,8 +1887,8 @@ SceneRoots:
   - {fileID: 1160596676}
   - {fileID: 4383876067431123116}
   - {fileID: 879277183}
-  - {fileID: 443893106}
   - {fileID: 1646317101}
   - {fileID: 797799218}
   - {fileID: 4377198090141810487}
   - {fileID: 1305699499}
+  - {fileID: 139283096}

@@ -17,6 +17,7 @@ public abstract class Trap : MonoBehaviour
 
     public void Trigger()
     {
+        trapPlayerState.Clicked.Invoke();
         if (IsRunning() || lastActivation + _cooldown > Time.timeAsDouble)
         {
             trapPlayerState.OnNotReady.Invoke();
