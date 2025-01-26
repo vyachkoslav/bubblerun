@@ -45,6 +45,8 @@ public class BubbleUIInteraction : MonoBehaviour
         if (!interactionEnabled) return;
         if (other.TryGetComponent(out BubbleUI ui))
         {
+            if(hoveredBubbleUI)
+                hoveredBubbleUI.UnHover();
             hoveredBubbleUI = ui;
             ui.Hover();
         }
