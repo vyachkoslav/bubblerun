@@ -1,6 +1,8 @@
 using System.Collections;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
+using UnityEngine.InputSystem;
 
 public class ScoreTracker : MonoBehaviour
 {
@@ -18,6 +20,8 @@ public class ScoreTracker : MonoBehaviour
         }
     }
 
+    [SerializeField] TextMeshProUGUI p1WinText;
+    [SerializeField] TextMeshProUGUI p2WinText;
     [SerializeField] ApplicationManager _manager;
     [SerializeField] CameraFollowTargets _cameraScript;
     [SerializeField] GameObject _playerObject;
@@ -41,7 +45,7 @@ public class ScoreTracker : MonoBehaviour
 
     private void Update()
     {
-        if (timerPaused ||round < 0) return;
+        if (timerPaused || round < 0) return;
 
         results[round].timer += Time.deltaTime;
         results[round].score = Mathf.Max(results[round].score, _playerObject.transform.position.y);
@@ -57,6 +61,8 @@ public class ScoreTracker : MonoBehaviour
     {
         if (cr != null) return;
 
+        _playerObject.GetComponent<PlayerInput>().enabled = false;
+
         timerPaused = true;
         results[round].win = win;
         _cameraScript.useFollow = false;
@@ -66,13 +72,24 @@ public class ScoreTracker : MonoBehaviour
 
     private void EndGame()
     {
-        Debug.Log($"Winner: Player {FindWinner() + 1}");
+        int winner = FindWinner();
+        Debug.Log($"Winner: Player {winner + 1}");
+
+        if (winner == 0)
+        {
+            p1WinText.gameObject.SetActive(true);
+        }
+        else
+        {
+            p2WinText.gameObject.SetActive(true);
+        }
+
         _manager.DelayedSetScene("Menu");
     }
 
     private int FindWinner()
     {
-        if(results[0].win ^ results[1].win)
+        if (results[0].win ^ results[1].win)
         {
             if (results[0].win) return 0;
             else return 1;
@@ -90,13 +107,16 @@ public class ScoreTracker : MonoBehaviour
 
     private IEnumerator DelayedReset()
     {
-        yield return new WaitForSeconds(2);
         if (round == 1)
         {
             EndGame();
         }
         else
         {
+            yield return new WaitForSeconds(2);
+
+            _playerObject.GetComponent<PlayerInput>().enabled = true;
+
             _cameraScript.useFollow = true;
             _playerObject.transform.position = playerStartPos;
             _playerObject.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
