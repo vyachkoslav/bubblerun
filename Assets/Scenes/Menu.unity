@@ -1785,6 +1785,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255937bdd43deef4fa4c25a88bd1532e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  hoverColor: {r: 0.8666667, g: 0.8784314, b: 1, a: 1}
+  renderers:
+  - {fileID: 2008974536}
+  - {fileID: 2070983550}
+  - {fileID: 1643928422}
   OnInteracted:
     m_PersistentCalls:
       m_Calls:
@@ -1850,34 +1856,10 @@ MonoBehaviour:
         m_CallState: 2
   OnHover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 483034167}
-        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 7482667652216324306, guid: ff53e40355af73f4887bf4ed457bcbac, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnHoverEnd:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 483034167}
-        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 7482667652216324306, guid: 246578e736f4ac94d875bb9dedaab8c8, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!61 &483034166
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3053,6 +3035,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255937bdd43deef4fa4c25a88bd1532e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  hoverColor: {r: 0.8666667, g: 0.8784314, b: 1, a: 1}
+  renderers:
+  - {fileID: 147793570}
+  - {fileID: 1985652807}
+  - {fileID: 1971241678}
   OnInteracted:
     m_PersistentCalls:
       m_Calls:
@@ -3118,34 +3106,10 @@ MonoBehaviour:
         m_CallState: 2
   OnHover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 887589573}
-        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 7482667652216324306, guid: ff53e40355af73f4887bf4ed457bcbac, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnHoverEnd:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 887589573}
-        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 7482667652216324306, guid: 246578e736f4ac94d875bb9dedaab8c8, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &898926485
 GameObject:
   m_ObjectHideFlags: 0
@@ -6712,6 +6676,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 255937bdd43deef4fa4c25a88bd1532e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  hoverColor: {r: 0.8666667, g: 0.8784314, b: 1, a: 1}
+  renderers:
+  - {fileID: 1437097600}
+  - {fileID: 733217691}
+  - {fileID: 1570859576}
+  - {fileID: 254235079}
   OnInteracted:
     m_PersistentCalls:
       m_Calls:
@@ -6777,34 +6748,10 @@ MonoBehaviour:
         m_CallState: 2
   OnHover:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1972325493}
-        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 7482667652216324306, guid: ff53e40355af73f4887bf4ed457bcbac, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   OnHoverEnd:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1972325493}
-        m_TargetAssemblyTypeName: UnityEngine.SpriteRenderer, UnityEngine
-        m_MethodName: set_sprite
-        m_Mode: 2
-        m_Arguments:
-          m_ObjectArgument: {fileID: 7482667652216324306, guid: 246578e736f4ac94d875bb9dedaab8c8, type: 3}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Sprite, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1985652804
 GameObject:
   m_ObjectHideFlags: 0
