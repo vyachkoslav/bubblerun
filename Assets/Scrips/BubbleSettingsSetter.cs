@@ -1,5 +1,7 @@
 using System;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -12,6 +14,7 @@ public class BubbleSettingsSetter : MonoBehaviour
     [SerializeField] private GameObject bubblePlayer;
     [SerializeField] private bool setReadyOnAction;
 
+#if UNITY_EDITOR
     public void OnValidate()
     {
         if (playerInput.actions != bubblePlayerSettings.InputAsset)
@@ -20,6 +23,7 @@ public class BubbleSettingsSetter : MonoBehaviour
             EditorUtility.SetDirty(playerInput);
         }
     }
+#endif
 
     private void Awake()
     {
