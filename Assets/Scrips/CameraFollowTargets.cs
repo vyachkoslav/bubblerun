@@ -31,6 +31,8 @@ public class CameraFollowTargets : MonoBehaviour
                 maxY = target.position.y;
         }
 
+        if (count == 0) return;
+
         targetY /= count;
 
         var pos = transform.position;
